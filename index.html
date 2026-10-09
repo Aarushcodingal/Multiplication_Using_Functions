@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Project</title>
+</head>
+<body>
+
+    <h2>Multiplication Function Project</h2>
+    <p id="result"></p>
+
+    <script>
+        // Function with default parameter so if one value is undefined, it uses a default (like 1)
+        function multiplyNumbers(num1, num2 = 1) {
+            return num1 * num2;
+        }
+
+        // Calling the function with only one parameter (the second parameter is undefined)
+        let total = multiplyNumbers(5);
+
+        // Displaying the result in the HTML paragraph tag
+        document.getElementById("result").innerHTML = "The result of the multiplication is: " + total;
+    </script>
+
+</body>
+</html>
